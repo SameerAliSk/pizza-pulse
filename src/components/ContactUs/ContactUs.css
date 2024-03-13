@@ -1,0 +1,24 @@
+.contact-bg-image {
+  background-image: url("https://res.cloudinary.com/dy2gsniki/image/upload/v1696924252/georgia-z-JG5lgvc57qE-unsplash_wcbffh.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  margin-top: 88px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 4rem;
+}
+.contact-us-h3 {
+  color: #ff0800;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+}
+.contact-bg-image h1 {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 500;
+  margin: 0;
+}

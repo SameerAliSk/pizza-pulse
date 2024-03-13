@@ -1,0 +1,16 @@
+.nutritional-container {
+  margin-top: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.nutritional-heading {
+  color: #ff0800;
+  font-size: 32px;
+  font-weight: 500;
+}
+.nutritional-img {
+  width: 60vw;
+}
