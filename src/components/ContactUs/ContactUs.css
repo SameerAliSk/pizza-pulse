@@ -1,11 +1,11 @@
 .contact-bg-image {
-  background-image: url("https://res.cloudinary.com/dy2gsniki/image/upload/v1696924252/georgia-z-JG5lgvc57qE-unsplash_wcbffh.jpg");
+  background-image: url("../../Assets/contact_us_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  height: 85vh;
+  height: 78vh;
   justify-content: center;
-  margin-top: 88px;
+  margin-top: 18px;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 4rem;

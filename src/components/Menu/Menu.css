@@ -2,12 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 88px;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.menu-cards-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem 4rem 4rem 4rem;
 }
 .product-img {
-  height: 35%;
+  height: 40%;
   width: 100%;
 }
 .product-content {
   padding: 10px 16px;
+}
+.size-crust-container {
+  display: flex;
+  padding: 8px 0;
+  gap: 20px;
 }

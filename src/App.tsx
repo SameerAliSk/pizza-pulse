@@ -7,15 +7,16 @@ import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import NutritionPage from "./pages/NutritionPage";
 import MenuPage from "./pages/MenuPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/Nutritional-info" element={<NutritionPage />} />
+        <Route path="/nutritional-info" element={<NutritionPage />} />
         <Route path="/menu" element={<MenuPage />} />
       </Routes>
     </BrowserRouter>

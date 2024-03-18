@@ -1,24 +1,59 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../Assets/Designer.png";
 import { Button, Stack, Badge } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Footer from "../Footer/Footer";
+import { useState } from "react";
 
 export default function Navbar() {
+  const location = useLocation();
   return (
     <>
       <header className="header">
         <nav className="nav-bar">
-          <Link to="/">
+          <NavLink to="/">
             <img src={logo} alt="pizza-pulse-logo" className="logo" />
-          </Link>
-          <div className="link-elements-container">
-            <Link to="/">Home</Link>
-            <Link to="/menu">Menu</Link>
-            <Link to="/about-us">About</Link>
-            <Link to="/nutrition">Nutrition</Link>
-            <Link to="/contact-us">Contact</Link>
+          </NavLink>
+          <div className="NavLink-elements-container">
+            <NavLink
+              className={location.pathname === "/" ? "navlink-active" : ""}
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={location.pathname === "/menu" ? "navlink-active" : ""}
+              to="/menu"
+            >
+              Menu
+            </NavLink>
+            <NavLink
+              className={
+                location.pathname === "/about-us" ? "navlink-active" : ""
+              }
+              to="/about-us"
+            >
+              About
+            </NavLink>
+            <NavLink
+              className={
+                location.pathname === "/nutritional-info"
+                  ? "navlink-active"
+                  : ""
+              }
+              to="/nutritional-info"
+            >
+              Nutrition
+            </NavLink>
+            <NavLink
+              className={
+                location.pathname === "/contact-us" ? "navlink-active" : ""
+              }
+              to="/contact-us"
+            >
+              Contact
+            </NavLink>
           </div>
           <Stack spacing={2} direction="row">
             <Button

@@ -18,7 +18,7 @@
   height: 65px;
   width: 65px;
 }
-.link-elements-container {
+.NavLink-elements-container {
   display: flex;
   gap: 24px;
 }
@@ -28,6 +28,12 @@ nav a {
   color: #5f88a3;
   font-weight: 500;
   cursor: pointer;
+}
+.navlink-active {
+  text-decoration: underline;
+  text-decoration-color: #ff0800;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
 }
 
 @media (min-width: 576px) {
