@@ -7,9 +7,11 @@ import {
   InputLabel,
   NativeSelect,
   Button,
+  Stack,
 } from "@mui/material";
 import { useState } from "react";
 import { SelectChangeEvent } from "@mui/material/Select";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 export default function Menu() {
   const [size, setSize] = useState("");
@@ -43,23 +45,31 @@ export default function Menu() {
             >
               Blazing Onion & Paprika
             </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                fontSize: "14px",
-                color: "rgb(122 122 122 / 87%)",
-                display: "-webkit-box",
-                WebkitLineClamp: "3",
-                WebkitBoxOrient: "vertical",
-                overflow: "hidden",
+            <div
+              style={{
+                paddingBottom: "6px",
+                borderBottom: " 1px solid rgb(233, 233, 233)",
               }}
             >
-              Spiciest non veg pizza with spicy &amp; herby chicken sausage and
-              red paprika toppings on a new spicy peri peri sauce base."Spiciest
-              non veg pizza with spicy &amp; herby chicken sausage and red
-              paprika toppings on a new spicy peri peri sauce base.
-            </Typography>
-            <div className="size-crust-container">
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: "14px",
+                  color: "rgb(122 122 122 / 87%)",
+                  display: "-webkit-box",
+                  WebkitLineClamp: "3",
+                  WebkitBoxOrient: "vertical",
+                  overflow: "hidden",
+                }}
+              >
+                Spiciest non veg pizza with spicy &amp; herby chicken sausage
+                and red paprika toppings on a new spicy peri peri sauce
+                base."Spiciest non veg pizza with spicy &amp; herby chicken
+                sausage and red paprika toppings on a new spicy peri peri sauce
+                base.
+              </Typography>{" "}
+            </div>
+            <Stack direction="row" spacing={5} sx={{ paddingTop: "6px" }}>
               <div>
                 <InputLabel
                   variant="standard"
@@ -123,8 +133,9 @@ export default function Menu() {
                   <option value="Fresh Pan Pizza">Fresh Pan Pizza</option>
                 </NativeSelect>
               </div>
-            </div>
-            <div className="size-crust-container">
+            </Stack>
+
+            <Stack direction="row" spacing={5} sx={{ paddingTop: "10px" }}>
               <Typography variant="h4" component="h2" sx={{ color: "#ff2400" }}>
                 &#8377;349
               </Typography>
@@ -135,10 +146,11 @@ export default function Menu() {
                   borderRadius: "9999px",
                   fontWeight: "600",
                 }}
+                endIcon={<ShoppingCartOutlinedIcon />}
               >
                 Add to Cart
               </Button>
-            </div>
+            </Stack>
           </div>
         </Paper>
         <Paper elevation={3} sx={{ height: "23rem", width: "22%" }}>

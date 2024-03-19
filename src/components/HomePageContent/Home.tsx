@@ -10,7 +10,9 @@ import {
   InputLabel,
   NativeSelect,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 export default function Home() {
   const [size, setSize] = useState("");
   const [crust, setCrust] = useState("New Hand Tossed");
@@ -42,24 +44,31 @@ export default function Home() {
             happiness with every order.
           </p>
           <Stack direction="row" spacing={4}>
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: "#f13a01",
-                borderRadius: "9999px",
-                fontWeight: "600",
-              }}
-              endIcon={<ArrowForwardIcon />}
-            >
-              Order Now
-            </Button>
-            <Button
-              variant="text"
-              endIcon={<ArrowForwardIcon />}
-              sx={{ color: "#4b5563", fontWeight: "600", fontSize: "14px" }}
-            >
-              Learn More
-            </Button>
+            <Link to="/menu">
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#f13a01",
+                  borderRadius: "9999px",
+                  fontWeight: "600",
+                  "&:hover": {
+                    backgroundColor: "#ff4500",
+                  },
+                }}
+                endIcon={<ArrowForwardIcon />}
+              >
+                Order Now
+              </Button>
+            </Link>
+            <Link to="/about-us">
+              <Button
+                variant="text"
+                endIcon={<ArrowForwardIcon />}
+                sx={{ color: "#4b5563", fontWeight: "600", fontSize: "14px" }}
+              >
+                Learn More
+              </Button>
+            </Link>
           </Stack>
         </div>
         <img src={home} alt="baked-pizza" className="pizza-img" />
@@ -174,6 +183,7 @@ export default function Home() {
                   borderRadius: "9999px",
                   fontWeight: "600",
                 }}
+                endIcon={<ShoppingCartOutlinedIcon />}
               >
                 Add to Cart
               </Button>
