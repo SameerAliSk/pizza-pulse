@@ -9,6 +9,7 @@ import NutritionPage from "./pages/NutritionPage";
 import MenuPage from "./pages/MenuPage";
 import HomePage from "./pages/HomePage";
 import CartPage from "./pages/CartPage";
+import UserAdminInfoPage from "./pages/UserAdminInfoPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/nutritional-info" element={<NutritionPage />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/check-out" element={<CartPage />} />
+        <Route path="user-info" element={<UserAdminInfoPage />} />
       </Routes>
     </BrowserRouter>
   );
