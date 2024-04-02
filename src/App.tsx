@@ -10,6 +10,8 @@ import MenuPage from "./pages/MenuPage";
 import HomePage from "./pages/HomePage";
 import CartPage from "./pages/CartPage";
 import UserAdminInfoPage from "./pages/UserAdminInfoPage";
+import UsersPage from "./pages/UsersPage";
+import OrdersPage from "./pages/OrdersPage";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/check-out" element={<CartPage />} />
         <Route path="user-info" element={<UserAdminInfoPage />} />
+        <Route path="all-users" element={<UsersPage />} />
+        <Route path="all-customers" element={<OrdersPage />} />
       </Routes>
     </BrowserRouter>
   );

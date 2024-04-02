@@ -101,25 +101,26 @@ export default function Categories() {
             sx={{
               height: "33px",
               fontWeight: "600",
-              color: "#4b5563",
-              borderColor: "#d1d5db",
+              backgroundColor: "#7FFF00",
+              borderColor: "#7FFF00",
+              color: "#0f0f0f",
               "&:hover": {
-                backgroundColor: "#f8fafc",
-                borderColor: "#d1d5db",
+                backgroundColor: "#6DE600",
+                borderColor: "#6DE600",
               },
             }}
           >
             Edit
           </Button>
           <Button
-            variant="outlined"
+            variant="contained"
             sx={{
               height: "33px",
               fontWeight: "600",
-              color: "#4b5563",
-              borderColor: "#d1d5db",
+              backgroundColor: "#cf352e",
+              borderColor: "#cf352e",
               "&:hover": {
-                backgroundColor: "#f8fafc",
+                backgroundColor: "#B02B25",
                 borderColor: "#d1d5db",
               },
             }}
